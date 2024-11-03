@@ -1,0 +1,37 @@
+myapp:
+  name: Lession-07-yml
+  owner: changKun
+  port: 9870
+  security :
+    username: root
+    password: 123456
+
+spring:
+  config:
+    import: conf/db.yml,conf/redis.yml
+  profiles:
+    active: test
+
+security:
+  username : 123
+  password: hello
+
+names:
+  - lisi
+  - zhangSan
+
+servers:
+  - title:  华北服务器
+    ip: 202.12.39.1
+  - title: 西南服务器
+    ip: 106.90.23.229
+
+users:
+  user1:
+    name: 张三
+    sex: 男
+    age: 22
+  user2:
+    name: 李四
+    sex : 女
+    age : 21
